@@ -45,7 +45,7 @@ class _MyHomeState extends State<MyHome> {
               padding: EdgeInsets.all(10.0),
               child: OutlineButton(
                 padding: EdgeInsets.all(20.0),
-                highlightedBorderColor: Colors.blue[800],
+                highlightedBorderColor: Colors.blue[900],
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
@@ -61,7 +61,7 @@ class _MyHomeState extends State<MyHome> {
               padding: EdgeInsets.all(10.0),
               child: OutlineButton(
                 padding: EdgeInsets.all(20.0),
-                highlightedBorderColor: Colors.blue[800],
+                highlightedBorderColor: Colors.blue[900],
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
@@ -77,7 +77,7 @@ class _MyHomeState extends State<MyHome> {
               padding: EdgeInsets.all(10.0),
               child: OutlineButton(
                 padding: EdgeInsets.all(20.0),
-                highlightedBorderColor: Colors.blue[800],
+                highlightedBorderColor: Colors.blue[900],
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
