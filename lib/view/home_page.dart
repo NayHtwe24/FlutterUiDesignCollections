@@ -50,7 +50,7 @@ class _MyHomeState extends State<MyHome> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => MyAlertBox()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => simpleAlert()));
                 },
                 child: Text(
                   "Alert Box",
