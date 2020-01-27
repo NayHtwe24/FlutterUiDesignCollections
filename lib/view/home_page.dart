@@ -4,6 +4,7 @@ import 'package:ui_design_assignment/view/appbar/appbar.dart';
 import 'package:ui_design_assignment/view/button/buttons.dart';
 import 'package:ui_design_assignment/view/checkbox/checkbox.dart';
 import 'package:ui_design_assignment/view/radiobutton/radiobutton.dart';
+import 'package:ui_design_assignment/view/textfield/all_inputs.dart';
 
 class MyHome extends StatefulWidget {
   @override
@@ -23,7 +24,12 @@ class _MyHomeState extends State<MyHome> {
       ),
       body: Container(
         margin: EdgeInsets.all(10.0),
-        child: ListView(
+        child: GridView.count(
+          crossAxisCount: 2,
+          childAspectRatio: 1.0,
+          padding: const EdgeInsets.all(4.0),
+          mainAxisSpacing: 4.0,
+          crossAxisSpacing: 4.0,
           children: <Widget>[
             Container(
                   padding: EdgeInsets.all(10.0),
@@ -38,6 +44,8 @@ class _MyHomeState extends State<MyHome> {
                     },
                     child: Text(
                       "Buttons",
+                      style: TextStyle(fontFamily: "MyanmarSabae",
+                      fontSize: 20),
                     ),
                   ),
             ),
@@ -54,6 +62,8 @@ class _MyHomeState extends State<MyHome> {
                 },
                 child: Text(
                   "Alert Box",
+                  style: TextStyle(fontFamily: "MyanmarSabae",
+                      fontSize: 20),
                 ),
               ),
             ),
@@ -70,6 +80,8 @@ class _MyHomeState extends State<MyHome> {
                 },
                 child: Text(
                   "Radio Button",
+                  style: TextStyle(fontFamily: "MyanmarSabae",
+                      fontSize: 20),
                 ),
               ),
             ),
@@ -86,6 +98,8 @@ class _MyHomeState extends State<MyHome> {
                 },
                 child: Text(
                   "CheckBox",
+                  style: TextStyle(fontFamily: "MyanmarSabae",
+                      fontSize: 20),
                 ),
               ),
             ),
@@ -102,6 +116,26 @@ class _MyHomeState extends State<MyHome> {
                 },
                 child: Text(
                   "App Bar",
+                  style: TextStyle(fontFamily: "MyanmarSabae",
+                      fontSize: 20),
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(10.0),
+              child: OutlineButton(
+                padding: EdgeInsets.all(20.0),
+                highlightedBorderColor: Colors.red,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AllInputWidgets()));
+                },
+                child: Text(
+                  "Text Field",
+                  style: TextStyle(fontFamily: "MyanmarSabae",
+                      fontSize: 20),
                 ),
               ),
             )
